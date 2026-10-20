@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EventEase | Discover Events</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">Event<span>Ease</span></a>
+    <nav><a href="#events">Explore</a><a href="login.html">Login</a><a href="register.html">Register</a><a href="my-bookings.html">My bookings</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">FIND YOUR NEXT EXPERIENCE</p>
+      <h1>Good events.<br><span>Great memories.</span></h1>
+      <p>Discover events, explore venues and keep your bookings in one place.</p>
+      <a class="button" href="#events">Explore events</a>
+    </section>
+    <section id="events" class="section">
+      <div class="section-heading"><div><p class="eyebrow">WHAT'S HAPPENING</p><h2>Explore events</h2></div>
+      <div class="event-controls"><input id="search" type="search" placeholder="Search events..." aria-label="Search events"><select id="sort" aria-label="Sort events"><option value="event_date:ASC">Date: soonest</option><option value="event_date:DESC">Date: latest</option><option value="title:ASC">Title: A–Z</option><option value="ticket_price:ASC">Price: low to high</option><option value="ticket_price:DESC">Price: high to low</option></select></div></div>
+      <p id="notice" class="notice" role="status">Loading events…</p>
+      <div id="event-list" class="event-grid"></div>
+    </section>
+  </main>
+  <footer>EventEase · Web API Development project</footer>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/auth-ui.js"></script>
+  <script src="assets/js/events.js"></script>
+</body>
+</html>

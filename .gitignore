@@ -1,0 +1,12 @@
+# Secrets - never commit
+backend/.env
+.env
+
+# Runtime logs
+backend/logs/*.log
+
+# OS / editor files
+Thumbs.db
+.DS_Store
+.vscode/
+*.zip

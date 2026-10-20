@@ -1,0 +1,4 @@
+document.querySelector('#register-form').addEventListener('submit', async (event) => {
+  event.preventDefault(); const notice=document.querySelector('#notice'); const form=new FormData(event.currentTarget); notice.textContent='Creating account…';
+  try { const r=await fetch(`${window.EVENTEASE_API}/auth/register`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:form.get('name'),email:form.get('email'),password:form.get('password')})}); const d=await r.json(); if(!r.ok||!d.success) throw new Error(d.error?.message||'Registration failed.'); notice.textContent='Account created. You can now log in.'; event.currentTarget.reset(); } catch(e) { notice.textContent=e.message; }
+});
