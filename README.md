@@ -8,7 +8,7 @@ SWC3633/SWC4443 Web API Development
 | Student | AMZAR FAIZZUDDIN BIN MOHD HAMDAN |
 | Student ID | AM2508020090 |
 | Project type | Solo project (approved by lecturer) |
-| Demonstration video | _add YouTube link_ |
+| Demonstration video |https://youtu.be/R7eWpEWpOoc|
 | Project report | [docs/EventEase_Project_Report.pdf](docs/EventEase_Project_Report.pdf) |
 
 EventEase is a PHP + MySQL REST API with an HTML/CSS/JavaScript frontend. Customers browse published events, book tickets and view or cancel their bookings; organisers manage their own events; administrators manage users, venues, events and bookings.
